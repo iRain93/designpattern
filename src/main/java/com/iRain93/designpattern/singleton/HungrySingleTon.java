@@ -15,8 +15,7 @@ public class HungrySingleTon {
         }
     }
 
-    public HungrySingleTon getInstance() {
+    public static HungrySingleTon getInstance() {
         return instance;
     }
-
 }
