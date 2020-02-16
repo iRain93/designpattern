@@ -8,9 +8,9 @@ package com.iRain93.designpattern.singleton;
 public class Main {
 
     public static void main(String[] args) {
-        LazySingleTonSafe ton1 = LazySingleTonSafe.getInstance();
+        StaticInnerClassSingleTon  ton1 = StaticInnerClassSingleTon .getInstance();
         System.out.println(ton1);
-        LazySingleTonSafe ton2 = LazySingleTonSafe.getInstance();
+        StaticInnerClassSingleTon  ton2 = StaticInnerClassSingleTon .getInstance();
         System.out.println(ton2);
         System.out.println(ton1 == ton2);
         System.out.println(ton2.equals(ton1));
