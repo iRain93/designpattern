@@ -7,9 +7,7 @@ package com.iRain93.designpattern.singleton;
  */
 public class SingleTonSixth {
 
-    private SingleTonSixth(){
-
-    }
+    private SingleTonSixth(){ }
 
     public static SingleTonSixth getInstance(){
         return SingleTonEnum.INSTANCE.getInstance();
@@ -17,16 +15,12 @@ public class SingleTonSixth {
 
     private static enum SingleTonEnum{
         INSTANCE;
-
         private  SingleTonSixth singleTonSixth;
-
         private  SingleTonEnum(){
             singleTonSixth=new SingleTonSixth();
         }
-
         private  SingleTonSixth getInstance(){
             return singleTonSixth;
         }
-
     }
 }
